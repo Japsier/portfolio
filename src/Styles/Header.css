@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 30px;
+}
+
+.profilePicture {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+}
+.profilePicture h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+.pictureContainer img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.aboutText {
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding-left: 30px;
+    max-width: 1000px;
+}
