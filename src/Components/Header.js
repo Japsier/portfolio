@@ -12,7 +12,9 @@ const Header = () => {
                     <img src={profile} alt="" />
                 </div>
             </div>
-            <div className="aboutText">
+            <div className="whiteBG"></div>
+            <div className="aboutText"> 
+                <img className="backupPicture" src={profile} alt="" />        
                 <h2>About me</h2>
                 <p>Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. 
