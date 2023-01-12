@@ -71,3 +71,29 @@ main > h2 {
     }
 }
 
+@media (width <= 1000px) {
+    main {
+
+    }
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projectCard {
+        min-width: 300px;
+    }
+}
+@media (width <= 700px) {
+    main {
+
+    }
+    main h2 {
+        text-align: center;
+    }
+    .projectsGrid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

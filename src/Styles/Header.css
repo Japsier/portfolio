@@ -71,6 +71,7 @@ header {
         box-shadow: none;
         margin-top: 10px;
         background: transparent;
+        min-width: 100px;
     }
     .backupPicture {
         display: none;
