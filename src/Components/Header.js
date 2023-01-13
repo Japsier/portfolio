@@ -12,7 +12,6 @@ const Header = () => {
                     <img src={profile} alt="" />
                 </div>
             </div>
-            <div className="whiteBG"></div>
             <div className="aboutText"> 
                 <img className="backupPicture" src={profile} alt="" />        
                 <h2>About me</h2>

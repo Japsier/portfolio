@@ -22,21 +22,29 @@ main > h2 {
     max-width: 500px;
     border-radius: 20px;
 }
-.projectCard > img {
+.projectCard img {
     width: 100%;
     height: 220px;
     object-fit: cover;
     border-bottom: 2px solid #0d9488;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    transition-property: object-fit;
+    transition-duration: 1s;
+}
+.projectCard img:hover {
+    object-fit: fill
 }
 .projectLinks a {
     text-decoration: none;
     color: black;
 }
 .projectCard svg {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+}
+.projectCard svg:hover {
+    filter: invert(30%) sepia(22%) saturate(378%) hue-rotate(175deg) brightness(99%) contrast(90%)
 }
 .projectInfo {
     display: flex;
