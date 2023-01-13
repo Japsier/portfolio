@@ -5,7 +5,9 @@ header {
     padding: 30px;
     position: relative;
 }
-
+.profilePicture h1,  .backupName {
+    font-size: 33px;
+}
 .profilePicture {
     display: flex;
     position: relative;
@@ -13,6 +15,9 @@ header {
     text-align: center;
 }
 .backupPicture {
+    display: none;
+}
+.backupName {
     display: none;
 }
 .profilePicture h1 {
@@ -45,6 +50,15 @@ header {
     }
     .profilePicture {
         display: none;
+
+    }
+    .backupName {
+        display: inline;
+        position: absolute;
+        top: -60px;
+        color: white;
+        font-weight: 500;
+        font-family: fantasy;
     }
     .backupPicture {
         display: block;
@@ -57,15 +71,19 @@ header {
         margin-left: -50px;
     }
     .aboutText {
+        font-size: 18px;
         padding: 10px;
         max-width: 600px;
-        min-width: 400px;
+        min-width: 480px;
     }
 }
-@media (width <=500px) {
+@media (width <=600px) {
     header {
         flex-direction: column;
         padding: 20px;
+    }
+    .backupName {
+        display: none;
     }
     .aboutText {
         box-shadow: none;

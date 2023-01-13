@@ -69,7 +69,7 @@ main > h2 {
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     main {
       padding-left: 100px;
       padding-right: 100px;
