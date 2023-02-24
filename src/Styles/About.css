@@ -1,0 +1,19 @@
+main {
+    margin: 0;
+    padding: 0;
+}
+
+main h2 {
+    font-weight: 800;
+    font-size: 52px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 26px;
+    margin: 0;
+}
+.description {
+
+}
+.description h3 {
+    margin: 0;
+    padding-top: 10px;
+}

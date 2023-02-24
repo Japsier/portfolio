@@ -1,101 +1,33 @@
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    align-self: center;
-    padding: 30px;
-    position: relative;
+    height: 100px;
 }
-.profilePicture h1,  .backupName {
-    font-size: 33px;
+header a {
+    text-decoration: none;
+    color: black;
 }
-.profilePicture {
-    display: flex;
-    position: relative;
-    width: fit-content;
-    text-align: center;
+header nav div.active {
+    text-decoration: underline;
+    text-decoration-color: #059669;
 }
-.backupPicture {
-    display: none;
+header h1.name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #059669
 }
-.backupName {
-    display: none;
-}
-.profilePicture h1 {
-    color: white;
-    font-size: 22px;
-    font-weight: 400;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+header button.lightSwitch {
 
 }
-.pictureContainer img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-}
-.aboutText {
-    position: relative;
-    padding: 10px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    padding-left: 30px;
-    max-width: 1000px;
-    background-color: white;
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 @media (width <= 1000px) {
-    header {
-        padding: 80px;
-    }
-    .profilePicture {
-        display: none;
 
-    }
-    .backupName {
-        display: inline;
-        position: absolute;
-        top: -60px;
-        color: white;
-        font-weight: 500;
-        font-family: fantasy;
-    }
-    .backupPicture {
-        display: block;
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        float: left;
-        margin: 15px;
-        margin-top: -70px;
-        margin-left: -50px;
-    }
-    .aboutText {
-        font-size: 18px;
-        padding: 10px;
-        max-width: 600px;
-        min-width: 480px;
-    }
 }
 @media (width <=600px) {
-    header {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .backupName {
-        display: none;
-    }
-    .aboutText {
-        box-shadow: none;
-        margin-top: 10px;
-        background: transparent;
-        min-width: 100px;
-    }
-    .backupPicture {
-        display: none;
-        
-    }
-    .profilePicture {
-        display: block;
-    }
+
 }

@@ -7,11 +7,11 @@ html {
   flex-direction: column;
   min-height: 100%;
   position: relative;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.app h2 {
-  font-size: 24px;
-}
 .blueBackground {
   background-color: #0891b2;
   width: 100vw;
