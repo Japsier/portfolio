@@ -16,10 +16,18 @@ header nav div.active {
 header h1.name {
     font-size: 24px;
     font-weight: 600;
-    color: #059669
+    color: #059669;
+}
+header img {
+    height: 28px;
 }
 header button.lightSwitch {
-
+    border: 0;
+    padding: 3px;
+    background-color: white;
+}
+header button.lightSwitch:hover {
+    cursor: pointer;
 }
 nav {
     display: flex;

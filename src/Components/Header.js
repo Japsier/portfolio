@@ -1,6 +1,7 @@
 import "../Styles/Header.css"
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
+import moon from "../Assets/moon.png"
 
 const Header = (props) => {
     const activePage = props.activePage
@@ -26,7 +27,7 @@ const Header = (props) => {
                 ? <Link to="/contact"><div onClick={() => changeActivePage("contact")} className="active" >Contact</div></Link>
                 : <Link to="/contact"><div onClick={() => changeActivePage("contact")} >Contact</div></Link>}                      
             </nav>
-            <button className="lightSwitch">light</button>
+            <button className="lightSwitch"><img src={moon} alt="moon" /></button>
         </header>
     )
 }
