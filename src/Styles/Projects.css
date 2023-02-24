@@ -100,8 +100,8 @@ main > h2 {
     .projectsGrid {
         grid-template-columns: 1fr;
         gap: 30px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
 }

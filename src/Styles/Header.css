@@ -11,6 +11,7 @@ header a {
 header nav div.active {
     text-decoration: underline;
     text-decoration-color: #059669;
+    text-decoration-thickness: 2px;
 }
 header h1.name {
     font-size: 24px;
@@ -22,7 +23,20 @@ header button.lightSwitch {
 }
 nav {
     display: flex;
-    gap: 20px;
+}
+nav div {
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    transition-duration: .2s;
+    font-size: 16px;
+    font-weight: 500;
+    color: #52525b;
+}
+nav div:hover {
+    background-color: #e5e7eb;
+
 }
 
 @media (width <= 1000px) {

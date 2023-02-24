@@ -1,5 +1,10 @@
 import "../Styles/Main.css"
+import React, { useState, useEffect } from 'react';
+
 const Main = () => {
+    useEffect(() => {
+        
+    })
 
     return(
         <main>
