@@ -1,5 +1,5 @@
 import '../Styles/App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from './Header';
 import Projects from './Projects';
 import Footer from './Footer';
@@ -29,7 +29,7 @@ function App() {
   }
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className={isLightMode ? "App" : "App darkMode"}>
         <Header 
         activePage={activePage} changeActivePage={changeActivePage} 
@@ -39,17 +39,17 @@ function App() {
         {showMenu
         ? <Menu changeShowMenu={changeShowMenu} />
         : <Routes>
-          <Route path="/" element={ <Main changeActivePage={changeActivePage} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={ <Projects />} />
-          <Route path="/contact" element={ <Contact />} />
-        </Routes> }
+            <Route path="/" element={ <Main changeActivePage={changeActivePage} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={ <Projects />} />
+            <Route path="/contact" element={ <Contact />} />
+          </Routes> }
         {showMenu
         ? null
         : <Footer /> }
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
