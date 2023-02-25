@@ -25,6 +25,33 @@ const About = () => {
                 My current goals are to keep improving my current coding skills, and to start reading more books. 
             </p>
         </div>
+        <div className="skills">
+            <h4>My skills</h4>
+            <h5>Front-End</h5>
+            <ul className="frontend">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Tailwind</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>Styled Components</li>
+            </ul>
+            <h5>Back-End</h5>
+            <ul className="backend">
+                <li>Node.js</li>
+                <li>ExpressJS</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+            </ul>
+            <h5>Additional</h5>
+            <ul className="additional">
+                <li>Git</li>
+                <li>Webpack</li>
+                <li>Render</li>
+                <li>Vercel</li>
+            </ul>
+        </div>
     </main>
     )
 }
