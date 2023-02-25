@@ -1,6 +1,7 @@
 import "../Styles/Main.css"
+import { Link } from "react-router-dom"
 
-const Main = () => {
+const Main = (props) => {
 
     return(
         <main className="home">
@@ -11,7 +12,7 @@ const Main = () => {
                 I use ReactJS, ExpressJS & Mongoose to develop amazing and unique websites. 
                 This is the place where idea's can become reality.
             </p>
-            <button>More about me →</button>
+            <Link to="/about"><button onClick={() => props.changeActivePage("about")}>More about me →</button></Link>
         </main>
     )
 }

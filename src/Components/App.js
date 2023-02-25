@@ -9,19 +9,25 @@ import Contact from './Contact';
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [lightMode, setLightMode] = useState(true)
+  const [isLightMode, setIsLightMode] = useState(true)
+  const changeLightMode = (isLight) => {
+    setIsLightMode(isLight)
+  }
+
   const [activePage, setActivePage] = useState("home")
   const changeActivePage = (page) => {
     setActivePage(page)
-    console.log(activePage)
   }
   
   return (
     <BrowserRouter>
-      <div className='App'>
-        <Header activePage={activePage} changeActivePage={changeActivePage} />
+      <div className={isLightMode ? "App" : "App darkMode"}>
+        <Header 
+        activePage={activePage} changeActivePage={changeActivePage} 
+        isLightMode={isLightMode} changeLightMode={changeLightMode}
+        />
         <Routes>
-          <Route path="/" element={ <Main />} />
+          <Route path="/" element={ <Main changeActivePage={changeActivePage} />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={ <Projects />} />
           <Route path="/contact" element={ <Contact />} />

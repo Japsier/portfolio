@@ -2,10 +2,14 @@ import "../Styles/Header.css"
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
 import moon from "../Assets/moon.png"
+import sun from "../Assets/sun.png"
 
 const Header = (props) => {
     const activePage = props.activePage
     const changeActivePage = props.changeActivePage
+
+    const isLight = props.isLightMode
+    const changeLightMode = props.changeLightMode
 
 
 
@@ -27,7 +31,10 @@ const Header = (props) => {
                 ? <Link to="/contact"><div onClick={() => changeActivePage("contact")} className="active" >Contact</div></Link>
                 : <Link to="/contact"><div onClick={() => changeActivePage("contact")} >Contact</div></Link>}                      
             </nav>
-            <button className="lightSwitch"><img src={moon} alt="moon" /></button>
+            {isLight
+            ? <button className="lightSwitch" onClick={() => changeLightMode(false)}><img src={moon} alt="moon" /></button>
+            : <button className="lightSwitch" onClick={() => changeLightMode(true)}><img src={sun} alt="moon" /></button>}
+            
         </header>
     )
 }

@@ -3,6 +3,7 @@ main.home {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 
 }
 main.home h2 {
@@ -14,18 +15,21 @@ main.home h2 {
     color: #059669;
 }
 main.home h3 {
-    font-size: 3em;
+    font-size: 5em;
     margin: 0;
+    margin-top: -30px;
     padding: 0;
 }
 main.home p {
-
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 main.home button {
     border: 0;
     background-color: #059669;
     color: white;
     padding: 20px;
+    margin-bottom: 50px;
     max-width: 200px;
     border-radius: 10px;
     font-size: 18px;
