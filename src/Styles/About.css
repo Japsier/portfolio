@@ -1,21 +1,42 @@
 main {
     margin: 0;
+    margin-top: 30px;
     padding: 0;
 }
 
 main h2 {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 52px;
     border-bottom: 1px solid lightgray;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
     margin: 0;
-}
-.description {
-
 }
 .description h3 {
     margin: 0;
     padding-top: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #525252;
+}
+.darkMode .description h3 {
+    color: #d4d4d8;
+}
+.description p {
+    position: relative;
+}
+.beer {
+    display: inline-flex;
+    width: 140px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.beer:has(img) {
+    justify-content: center;
+    gap: 10px;
+}
+.beerIcon {
+    display: inline;
+    height: 20px;
 }
 .skills {
 

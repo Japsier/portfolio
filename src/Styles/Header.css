@@ -9,9 +9,7 @@ header a {
     color: black;
 }
 header nav div.active {
-    text-decoration: underline;
-    text-decoration-color: #059669;
-    text-decoration-thickness: 2px;
+    color: #059669;
 }
 header h1.name {
     font-size: 24px;
@@ -44,11 +42,17 @@ nav div {
     transition-duration: .2s;
     font-size: 16px;
     font-weight: 500;
-    color: #52525b;
+    color: #525252;
+}
+.darkMode nav div {
+    color: #d4d4d8;
 }
 nav div:hover {
     background-color: #e5e7eb;
 
+}
+.darkMode nav div:hover {
+    background-color: #404040;
 }
 
 @media (width <= 1000px) {

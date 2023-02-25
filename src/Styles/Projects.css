@@ -1,39 +1,51 @@
-main {
+main.projectsDisplay {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 50px;
-    padding: 30px;
+    margin-top: 30px;
 }
-main > h2 {
-    font-weight: 400;
+main.projectsDisplay > h2 {
+    font-weight: 600;
     padding: 0;
+    padding-bottom: 20px;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .projectsGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 .projectCard {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 14px;
     max-width: 500px;
     border-radius: 20px;
 }
+.projectCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.darkMode .projectCard:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 54px 55px, rgba(0, 0, 0, 0.2) 0px -12px 30px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.5) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.darkMode .projectCard {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 .projectCard img {
     width: 100%;
     height: 220px;
-    object-fit: cover;
-    border-bottom: 2px solid #0d9488;
+    object-fit: fill;
+    border-bottom: 2px solid #059669;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    transition-property: object-fit;
-    transition-duration: 1s;
 }
 .projectCard img:hover {
-    object-fit: fill
+    filter: drop-shadow(2px 2px 4px lightgray);
+}
+.darkMode .projectCard img:hover {
+    filter: drop-shadow(2px 2px 4px #525252);
 }
 .projectLinks a {
     text-decoration: none;
@@ -42,6 +54,9 @@ main > h2 {
 .projectCard svg {
     height: 25px;
     width: 25px;
+}
+.darkMode .projectCard svg {
+    filter: invert(98%) sepia(6%) saturate(781%) hue-rotate(324deg) brightness(111%) contrast(92%);
 }
 .projectCard svg:hover {
     filter: invert(30%) sepia(22%) saturate(378%) hue-rotate(175deg) brightness(99%) contrast(90%)
@@ -74,9 +89,7 @@ main > h2 {
       padding-left: 100px;
       padding-right: 100px;
     }
-    .projectsGrid {
-        gap: 50px;
-    }
+
 }
 
 @media (width <= 1000px) {

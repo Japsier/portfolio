@@ -6,7 +6,7 @@ import Footer from './Footer';
 import Main from "./Main"
 import About from './About';
 import Contact from './Contact';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [isLightMode, setIsLightMode] = useState(true)

@@ -1,11 +1,16 @@
 import "../Styles/About.css"
+import React, { useState } from 'react';
+import beer from "../Assets/beer.png"
+
 const About = () => {
+    const [hover, setHover] = useState(false)
+
     
     return(
     <main>
-        <h2>About me</h2>
+        <h2>About Me</h2>
         <div className="description">
-            <h3>Hello there! I'm japsir!</h3>
+            <h3>Hello there! I'm Jasper.</h3>
             <p>
                 I am a full stack webdeveloper from the Netherlands.
                 I am currently a student at a Dutch university studying Biology.
@@ -21,7 +26,15 @@ const About = () => {
             </p>
             <p>
                 Besides coding I'm also very fascinated by science, especially biology.
-                There are <span className="beer">*very few things*</span> that excite me more than programming & learning about biology.
+                There are
+                {hover
+                ? <span onMouseLeave={() => setHover(false)} className="beer">
+                    <img src={beer} alt="beer emoji"  className="beerIcon" />
+                    <img src={beer} alt="beer emoji"  className="beerIcon" />
+                    <img src={beer} alt="beer emoji"  className="beerIcon" />
+                  </span>
+                : <span onMouseEnter={() => setHover(true)}  className="beer"><span  className="beerText">  *very few things* </span></span> }        
+                that excite me more than programming & learning about biology.
                 My current goals are to keep improving my current coding skills, and to start reading more books. 
             </p>
         </div>

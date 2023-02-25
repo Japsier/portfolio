@@ -16,7 +16,7 @@ const Header = (props) => {
 
     return(
         <header>
-            <Link to="/"><h1 onClick={() => changeActivePage("home")} className="name">Japsir</h1></Link>
+            <Link to="/"><h1 onClick={() => changeActivePage("home")} className="name">Jasper</h1></Link>
             <nav>
                 {activePage === "home"
                 ? <Link to="/"><div onClick={() => changeActivePage("home")} className="active" >Home</div></Link>
