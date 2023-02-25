@@ -93,28 +93,20 @@ main.projectsDisplay > h2 {
 }
 
 @media (width <= 1000px) {
-    main {
-
-    }
     .projectsGrid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .projectCard {
-        min-width: 300px;
-    }
 }
-@media (width <= 700px) {
-    main {
+@media (width <= 750px) {
+    div.projectsGrid {
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr;
+        width: fit-content;
+        gap: 30px;
+        justify-content: center;
 
     }
-    main h2 {
-        text-align: center;
-    }
-    .projectsGrid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
     
 }

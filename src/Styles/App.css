@@ -4,6 +4,11 @@ html {
 }
 body, #root {
   min-height: 100vh;
+
+}
+body {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 
@@ -29,6 +34,9 @@ body:has(.darkMode) {
   top: 0;
   left: 0;
   clip-path: polygon(0 0, 100% 0%, 100% 56%, 0 100%);
+
+}
+@media (max-width: 600) {
 
 }
 

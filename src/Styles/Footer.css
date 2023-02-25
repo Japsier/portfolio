@@ -7,6 +7,7 @@ footer {
 }
 ul {
     list-style: none;
+    padding: 0;
     padding-top: 30px;
     display: flex;
     gap: 10px;

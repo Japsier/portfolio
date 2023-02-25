@@ -5,12 +5,14 @@ main {
 }
 
 main h2 {
+    padding: 0;
     font-weight: 600;
     font-size: 52px;
     border-bottom: 1px solid lightgray;
     padding-bottom: 20px;
     margin: 0;
 }
+
 .description h3 {
     margin: 0;
     padding-top: 10px;
@@ -18,39 +20,46 @@ main h2 {
     font-size: 22px;
     color: #525252;
 }
+
 .darkMode .description h3 {
     color: #d4d4d8;
 }
+
 .description p {
     position: relative;
 }
+
 .beer {
     display: inline-flex;
     width: 140px;
     height: 20px;
     box-sizing: border-box;
 }
+
 .beer:has(img) {
     justify-content: center;
     gap: 10px;
 }
+
 .beerIcon {
     display: inline;
     height: 20px;
 }
-.skills {
 
-}
+.skills {}
+
 .skills h4 {
     margin: 0;
     font-size: 38px;
     margin-bottom: 40px;
 }
+
 .skills h5 {
     font-size: 24px;
     margin: 0;
     margin-left: 50px;
 }
+
 .skills ul {
     margin: 0;
     padding: 0;
@@ -63,6 +72,7 @@ main h2 {
     gap: 8px;
     align-items: flex-start;
 }
+
 .skills li::before {
     content: " ";
     display: inline-block;
@@ -74,15 +84,22 @@ main h2 {
     width: 20px;
 
 }
+
 .skills li {
     display: flex;
     align-items: center;
 }
 
-.frontend {
-    
-
-}
-.backend {
-
+@media (width <= 750px) {
+    .skills h4 {
+        margin: 0;
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .skills h5 {
+        margin-left: 20px;
+    }
+    .skills ul {
+        margin-left: 36px;
+    }
 }

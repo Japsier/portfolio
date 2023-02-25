@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Main from "./Main"
 import About from './About';
 import Contact from './Contact';
+import Menu from "./Menu"
 import React, { useState } from 'react';
 
 function App() {
@@ -18,6 +19,14 @@ function App() {
   const changeActivePage = (page) => {
     setActivePage(page)
   }
+  const [showMenu, setShowMenu] = useState(false)
+  const changeShowMenu = () => {
+    if (showMenu) {
+      setShowMenu(false)
+    } else {
+      setShowMenu(true)
+    }
+  }
   
   return (
     <BrowserRouter>
@@ -25,14 +34,19 @@ function App() {
         <Header 
         activePage={activePage} changeActivePage={changeActivePage} 
         isLightMode={isLightMode} changeLightMode={changeLightMode}
+        showMenu={showMenu} changeShowMenu={changeShowMenu}
         />
-        <Routes>
+        {showMenu
+        ? <Menu changeShowMenu={changeShowMenu} />
+        : <Routes>
           <Route path="/" element={ <Main changeActivePage={changeActivePage} />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={ <Projects />} />
           <Route path="/contact" element={ <Contact />} />
-        </Routes>
-        <Footer />
+        </Routes> }
+        {showMenu
+        ? null
+        : <Footer /> }
       </div>
 
     </BrowserRouter>

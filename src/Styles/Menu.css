@@ -1,0 +1,19 @@
+.menuPage {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 36px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.darkMode .menuPage a {
+    color: whitesmoke;
+}
+.menuPage a {
+    text-decoration: none;
+    color: black;
+}
