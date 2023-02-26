@@ -1,6 +1,10 @@
 import "../Styles/Contact.css"
+import { useEffect } from "react"
 
 const Contact = () => {
+    useEffect(() => {
+        document.title = "Contact - Jasper"
+    }, [])
 
     return(
         <div>

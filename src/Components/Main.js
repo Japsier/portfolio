@@ -1,7 +1,11 @@
 import "../Styles/Main.css"
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 const Main = (props) => {
+    useEffect(() => {
+        document.title = "Jasper - WebDevelopment"
+    }, [])
 
     return(
         <main className="home">

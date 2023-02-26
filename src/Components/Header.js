@@ -30,9 +30,9 @@ const Header = (props) => {
                 {activePage === "projects"
                 ? <Link to="/projects"><div onClick={() => changeActivePage("projects")} className="active" >Projects</div></Link>
                 : <Link to="/projects"><div onClick={() => changeActivePage("projects")} >Projects</div></Link>}
-                {activePage === "contact"
+                {/*{activePage === "contact"
                 ? <Link to="/contact"><div onClick={() => changeActivePage("contact")} className="active" >Contact</div></Link>
-                : <Link to="/contact"><div onClick={() => changeActivePage("contact")} >Contact</div></Link>}                      
+                : <Link to="/contact"><div onClick={() => changeActivePage("contact")} >Contact</div></Link>} */}                   
 
             </nav>
             <div className="extraNav">

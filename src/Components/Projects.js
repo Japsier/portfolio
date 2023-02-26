@@ -5,8 +5,13 @@ import memorycard from"../Assets/memorycard.png"
 import tictactoe from "../Assets/tictactoe.png"
 import etchasketch from "../Assets/etch-a-sketch.png"
 import shoppingcart from "../Assets/shoppingcart.png"
+import { useEffect } from "react"
 
 const Projects = () => {
+    useEffect(() => {
+        document.title = "Projects - Jasper"
+        window.scrollTo(0, 0);
+    }, [])
     
 
     return(

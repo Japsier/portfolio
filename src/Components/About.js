@@ -1,9 +1,15 @@
 import "../Styles/About.css"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import beer from "../Assets/beer.png"
+import { Link } from "react-router-dom";
 
-const About = () => {
+const About = (props) => {
     const [hover, setHover] = useState(false)
+
+    useEffect(() => {
+        document.title = "About - Jasper"
+        window.scrollTo(0, 0);
+    }, [])
 
     
     return(
@@ -13,29 +19,21 @@ const About = () => {
             <h3>Hello there! I'm Jasper.</h3>
             <p>
                 I am a full stack webdeveloper from the Netherlands.
-                I am currently a student at a Dutch university studying Biology.
-                During my last years in high-school I became very interested in technology, 
+                I am currently a student at a Dutch university.
+                Starting in my last years of high-school I became very interested in technology, 
                 and especially how I can create my own applications and programs.
                 The fact that I can build things that can be used by millions or even billions of people
-                is something that I never thought would be possible. 
+                around the world is something that I never thought to be a possibility. 
             </p>
             <p>
                 What I love about web-development is that its a never-ending persuit,
-                here is always something else to learn and explore.
+                there is always something new to learn and explore.
                 Its also a very empowering skill, the possibile things to build are virtually infinite.
             </p>
             <p>
-                Besides coding I'm also very fascinated by science, especially biology.
-                There are
-                {hover
-                ? <span onMouseLeave={() => setHover(false)} className="beer">
-                    <img src={beer} alt="beer emoji"  className="beerIcon" />
-                    <img src={beer} alt="beer emoji"  className="beerIcon" />
-                    <img src={beer} alt="beer emoji"  className="beerIcon" />
-                  </span>
-                : <span onMouseEnter={() => setHover(true)}  className="beer"><span  className="beerText">  *very few things* </span></span> }        
-                that excite me more than programming & learning about biology.
-                My current goals are to keep improving my current coding skills, and to start reading more books. 
+                But the best part about software development is helping others. 
+                Helping a person, user or a bussiness to achieve their goals
+                is just an incredible feeling. Want to learn more about me? Look at my skills and projects below.
             </p>
         </div>
         <div className="skills">
@@ -61,10 +59,13 @@ const About = () => {
             <ul className="additional">
                 <li>Git</li>
                 <li>Webpack</li>
-                <li>Render</li>
                 <li>Vercel</li>
+                <li>Firebase</li>
+                <li>Jest</li>
+                <li>Render</li>
             </ul>
         </div>
+        <Link to="/projects"><button onClick={() => props.changeActivePage("projects")}>See My Work<span>→</span></button></Link>
     </main>
     )
 }

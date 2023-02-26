@@ -40,7 +40,7 @@ function App() {
         ? <Menu changeShowMenu={changeShowMenu} />
         : <Routes>
             <Route path="/" element={ <Main changeActivePage={changeActivePage} />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About changeActivePage={changeActivePage} />} />
             <Route path="/projects" element={ <Projects />} />
             <Route path="/contact" element={ <Contact />} />
           </Routes> }

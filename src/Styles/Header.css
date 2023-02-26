@@ -57,6 +57,9 @@ nav div:hover {
 .darkMode nav div:hover {
     background-color: #404040;
 }
+#menu:hover {
+    cursor: pointer;
+}
 
 @media (width <= 1000px) {
 

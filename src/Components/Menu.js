@@ -7,7 +7,7 @@ const Menu = (props) => {
         <Link to="/"><li onClick={() => props.changeShowMenu()}>Home</li></Link>
         <Link to="/about"><li onClick={() => props.changeShowMenu()}>About</li></Link>
         <Link to="/projects"><li onClick={() => props.changeShowMenu()}>Projects</li></Link>
-        <Link to="/contact"><li onClick={() => props.changeShowMenu()}>Contact</li></Link>
+        {/*<Link to="/contact"><li onClick={() => props.changeShowMenu()}>Contact</li></Link>*/}
     </ul>
     )
 }
