@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f8402077.css",
-    "main.js": "/portfolio/static/js/main.c771b07e.js",
-    "static/media/memorycard.png": "/portfolio/static/media/memorycard.2d89b8c4f28e784d4421.png",
+    "main.js": "/portfolio/static/js/main.223e75bd.js",
+    "static/media/memorycard.png": "/portfolio/static/media/memorycard.21e65ac314a2e977338c.png",
     "static/media/footerImg.jpg": "/portfolio/static/media/footerImg.537ee40888db4faf7346.jpg",
-    "static/media/shoppingcart.png": "/portfolio/static/media/shoppingcart.b31100d32161ccb81536.png",
     "static/media/uniswap.png": "/portfolio/static/media/uniswap.bbc5e305150a02413d5d.png",
+    "static/media/membersOnly.png": "/portfolio/static/media/membersOnly.cde05ceb29713edb17d5.png",
     "static/media/etch-a-sketch.png": "/portfolio/static/media/etch-a-sketch.cc6117e5638545831eca.png",
     "static/media/beer.png": "/portfolio/static/media/beer.421e42e12761a8a48149.png",
     "static/media/battleships.png": "/portfolio/static/media/battleships.d2e85cb41d62186c999c.png",
@@ -13,10 +13,10 @@
     "static/media/sun.png": "/portfolio/static/media/sun.e084c7323a6f30ebee93.png",
     "index.html": "/portfolio/index.html",
     "main.f8402077.css.map": "/portfolio/static/css/main.f8402077.css.map",
-    "main.c771b07e.js.map": "/portfolio/static/js/main.c771b07e.js.map"
+    "main.223e75bd.js.map": "/portfolio/static/js/main.223e75bd.js.map"
   },
   "entrypoints": [
     "static/css/main.f8402077.css",
-    "static/js/main.c771b07e.js"
+    "static/js/main.223e75bd.js"
   ]
 }
